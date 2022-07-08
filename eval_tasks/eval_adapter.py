@@ -394,7 +394,7 @@ class EvalHarnessAdapter(GPT2LM):
         results = evaluator.evaluate(
             lm=lm,
             task_dict=tasks.get_task_dict(eval_tasks),
-            description_dict=description_dict,
+            provide_description=description_dict,
             num_fewshot=num_fewshot,
             limit=limit,
             bootstrap_iters=bootstrap_iters,
